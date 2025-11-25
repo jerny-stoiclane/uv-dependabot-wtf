@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.10, <3.13"
 resolution-markers = [
     "python_full_version >= '3.12'",
@@ -270,7 +270,7 @@ wheels = [
 
 [[package]]
 name = "aws-encryption-sdk"
-version = "3.3.0"
+version = "4.0.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -278,9 +278,9 @@ dependencies = [
     { name = "cryptography" },
     { name = "wrapt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/58/7c/452e103c3c2adcc4353781bd042c7daa03adaf15662e9a6a02857c09b55c/aws-encryption-sdk-3.3.0.tar.gz", hash = "sha256:eb2adba14f481cd83d7169ab8e642994896d39a4a64e1796904a6b49256613b0", size = 204131, upload-time = "2024-05-21T22:46:56.53Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cf/70/fa651eeb1e0e5b3a0d84c291dba2aef9e7c55bd613a54c103005b9ec1634/aws_encryption_sdk-4.0.3.tar.gz", hash = "sha256:f715ad55bec6bd215563cd5bb103b39fa59c504cbf90a024094c36ce0ec9de1c", size = 260396, upload-time = "2025-09-03T19:51:24.766Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/3d/bacf0aa4989879f78327cfac57a4272dba3e579ef725bcc30c50049d6461/aws_encryption_sdk-3.3.0-py2.py3-none-any.whl", hash = "sha256:c2a967ebe70820f64dea1eb7000f60fe54f56b23276a592e1b77ec475e823304", size = 90376, upload-time = "2024-05-21T22:46:52.761Z" },
+    { url = "https://files.pythonhosted.org/packages/15/22/f0f90eb4de2043803bc6c414833b730657643f62672a89f6619faa483064/aws_encryption_sdk-4.0.3-py2.py3-none-any.whl", hash = "sha256:2f56993bdc5963c656e5b417ed62d1da46ee7a3c438c3ea5dfca89f3f7a86e4b", size = 99131, upload-time = "2025-09-03T19:51:23.337Z" },
 ]
 
 [[package]]
@@ -3266,7 +3266,7 @@ requires-dist = [
     { name = "aiobotocore", specifier = ">=2.0,<3.0" },
     { name = "aiohttp", specifier = "==3.12.14" },
     { name = "asyncpg", specifier = "==0.29.0" },
-    { name = "aws-encryption-sdk", specifier = "==3.3.0" },
+    { name = "aws-encryption-sdk", specifier = "==4.0.3" },
     { name = "bcrypt", specifier = "==4.2.0" },
     { name = "boto3", specifier = ">1.0,<2.0" },
     { name = "botocore", specifier = ">1.0,<2.0" },
