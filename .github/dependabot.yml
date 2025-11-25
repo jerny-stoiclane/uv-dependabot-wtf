@@ -14,4 +14,4 @@ updates:
     interval: "daily"
   commit-message:
     prefix: "security"
-  open-pull-requests-limit: 0
+  open-pull-requests-limit: 10
