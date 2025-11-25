@@ -3,7 +3,7 @@ updates:
 - package-ecosystem: "uv"
   directory: "/"
   schedule:
-    interval: "dailsy"
+    interval: "daily"
   commit-message:
     prefix: "fix"
   open-pull-requests-limit: 0
