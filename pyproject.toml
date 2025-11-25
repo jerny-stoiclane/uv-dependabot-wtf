@@ -13,7 +13,7 @@ dependencies = [
     "boto3<2.0,>1.0",
     "botocore<2.0,>1.0",
     "bumpver",
-    "cryptography==44.0.3",
+    "cryptography==46.0.3",
     "ddtrace==2.6.11",
     "deepdiff>=7.0",
     "faker==35.0.0",
