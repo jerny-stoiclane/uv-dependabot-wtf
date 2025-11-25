@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.10, <3.13"
 resolution-markers = [
     "python_full_version >= '3.12'",
@@ -1908,7 +1908,7 @@ wheels = [
 
 [[package]]
 name = "procrastinate"
-version = "3.2.2"
+version = "3.5.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asgiref" },
@@ -1918,9 +1918,9 @@ dependencies = [
     { name = "python-dateutil" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/24/9c/ba8a882fa516c033dc32bb54531b35a42944b3ef2a1aaab30adf204702e6/procrastinate-3.2.2.tar.gz", hash = "sha256:3f4da06bfab03b8f52af6a100a9d1fe91b7d399d548267f147e43989329d3c1f", size = 80962, upload-time = "2025-05-16T06:34:33.359Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/67/69/28bd55c8f2482822b0fca86d1f1d4659b37965587e05fd3b236ec157b9f5/procrastinate-3.5.3.tar.gz", hash = "sha256:97dd582b290c5c0efbc5d504244cc124bb17dde75d423da6cf71cd00d3450319", size = 82872, upload-time = "2025-09-26T05:50:47.399Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/7c/f741dc4ef4e70be5d7f68f86452c2746ec0662ac974a63051844081dabc7/procrastinate-3.2.2-py3-none-any.whl", hash = "sha256:9f6c537686140ac07f8227e555482de1eab8e9c04bc330a2a540ac0140336818", size = 141364, upload-time = "2025-05-16T06:34:31.355Z" },
+    { url = "https://files.pythonhosted.org/packages/7f/db/40f4e7dfeb4d82f518478419d3f255444f5885ae0b1243da942bd9b2ee30/procrastinate-3.5.3-py3-none-any.whl", hash = "sha256:ad2e13129b56c7e223241c7459d1f665c20d4877feb531bfccded9c6a26bf622", size = 146609, upload-time = "2025-09-26T05:50:45.606Z" },
 ]
 
 [[package]]
@@ -3287,7 +3287,7 @@ requires-dist = [
     { name = "paramiko", specifier = "==3.5.1" },
     { name = "pgpy" },
     { name = "pre-commit" },
-    { name = "procrastinate", specifier = "==3.2.2" },
+    { name = "procrastinate", specifier = "==3.5.3" },
     { name = "psycopg", extras = ["binary"], specifier = "==3.2.1" },
     { name = "psycopg2-binary" },
     { name = "py-moneyed", specifier = "==3.0" },

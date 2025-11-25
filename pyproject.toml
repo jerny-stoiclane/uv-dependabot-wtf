@@ -28,7 +28,7 @@ dependencies = [
     "openpyxl==3.1.5",
     "paramiko==3.5.1",
     "pre-commit",
-    "procrastinate==3.2.2",
+    "procrastinate==3.5.3",
     "pgpy",
     "psycopg[binary]==3.2.1",
     "psycopg2-binary",
