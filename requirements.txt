@@ -178,7 +178,6 @@ typing-extensions==4.12.2
 typing-inspection==0.4.0
 ujson==5.10.0
 urllib3==2.3.0
--e file:///Users/justinerny/stoiclane/uv-dependabot-wtf
 uvicorn==0.30.5
 uvloop==0.21.0
 virtualenv==20.29.2
