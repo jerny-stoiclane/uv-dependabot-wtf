@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.10, <3.13"
 resolution-markers = [
     "python_full_version >= '3.12'",
@@ -2140,7 +2140,7 @@ wheels = [
 
 [[package]]
 name = "ptpython"
-version = "3.0.26"
+version = "3.0.32"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appdirs" },
@@ -2148,9 +2148,9 @@ dependencies = [
     { name = "prompt-toolkit" },
     { name = "pygments" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/46/56/56cdf93d1633cba2b16486aa27978893ab3791dae51b27068e09d08bd300/ptpython-3.0.26.tar.gz", hash = "sha256:c8fb1406502dc349d99c57eaf06e7116f3b2deac94f02f342bae68708909f743", size = 71203, upload-time = "2024-02-06T10:23:44.227Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b6/8c/7e904ceeb512b4530c7ca1d918d3565d694a1fa7df337cdfc36a16347d68/ptpython-3.0.32.tar.gz", hash = "sha256:11651778236de95c582b42737294e50a66ba4a21fa01c0090ea70815af478fe0", size = 74080, upload-time = "2025-11-20T21:20:48.27Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7a/0f/c2b76f88533edfc5fcf08ae4401ae697ec204febcc9bc98262a2c2318e47/ptpython-3.0.26-py2.py3-none-any.whl", hash = "sha256:3dc4c066d049e16d8b181e995a568d36697d04d9acc2724732f3ff6686c5da57", size = 66131, upload-time = "2024-02-06T10:23:42.158Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/ac/0e35e5d7afd47ab0e2c71293ed2ad18df91a2a4a008c0ff59c2f22def377/ptpython-3.0.32-py3-none-any.whl", hash = "sha256:16435d323e5fc0a685d5f4dc5bb4494fb68ac68736689cd1247e1eda9369b616", size = 68099, upload-time = "2025-11-20T21:20:46.634Z" },
 ]
 
 [[package]]
