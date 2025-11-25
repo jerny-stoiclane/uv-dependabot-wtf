@@ -1,0 +1,9 @@
+version: 2
+updates:
+- package-ecosystem: "uv"
+  directory: "/"
+  schedule:
+    interval: "dailsy"
+  commit-message:
+    prefix: "fix"
+  open-pull-requests-limit: 0

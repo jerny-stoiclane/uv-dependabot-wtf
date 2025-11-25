@@ -1,0 +1,129 @@
+[project]
+name = "uv-dependabot-wtf"
+version = "2025.11.24.1"
+description = "Add your description here"
+requires-python = ">=3.10,<3.13"
+
+dependencies = [
+    "aiobotocore<3.0,>=2.0",
+    "aiohttp==3.12.14",
+    "asyncpg==0.29.0",
+    "aws-encryption-sdk==3.3.0",
+    "bcrypt==4.2.0",
+    "boto3<2.0,>1.0",
+    "botocore<2.0,>1.0",
+    "bumpver",
+    "cryptography==44.0.3",
+    "ddtrace==2.6.11",
+    "deepdiff>=7.0",
+    "faker==35.0.0",
+    "fastapi[all]==0.115.12",
+    "greenlet",
+    "icalendar==5.0.13",
+    "httpx===0.28.1",
+    "ics==0.7.2",
+    "jinja2==3.1.6",
+    "json-log-formatter",
+    "lark==1.1.9",
+    "openpyxl==3.1.5",
+    "paramiko==3.5.1",
+    "pre-commit",
+    "procrastinate==3.2.2",
+    "pgpy",
+    "psycopg[binary]==3.2.1",
+    "psycopg2-binary",
+    "py-moneyed==3.0",
+    "pydantic==2.11.3",
+    "pydantic-partial==0.5.5",
+    "pydantic-settings==2.10.1",
+    "pyhumps==3.8.0",
+    "pyjwt[crypto]==2.8.0",
+    "pytest-github-actions-annotate-failures",
+    "python-docx==1.1.2",
+    "python-magic==0.4.27",
+    "python-slugify==8.0.4",
+    "pytz",
+    "reportlab",
+    "requests",
+    "retrying",
+    "sendgrid",
+    "sqlalchemy[asyncio]",
+    "structlog",
+    "uvicorn==0.30.5",
+    "wheel",
+    "xlrd",
+    "python-dotenv>=1.0.1",
+    "weasyprint>=65.1",
+    "pygal>=3.0.5",
+]
+
+[dependency-groups]
+dev = [
+    "auth0-python",
+    "hypothesis",
+    "hypothesis-sqlalchemy",
+    "ipykernel",
+    "ipython",
+    "moto",
+    "pre-commit",
+    "ptpython>=3.0.26",
+    "prompt-toolkit>=3.0.43",
+    "pyright",
+    # "pytest==7.4.4",
+    # "pytest-asyncio==0.21.2",
+    "pytest>=8.2",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-postgresql",
+    "rich",
+    "ruff==0.11.2",
+    "typer",
+    "questionary==2.1.0",
+    "setuptools>=79.0.0",
+]
+
+
+# [build-system]
+# requires = ["setuptools>=61", "wheel"]
+# build-backend = "setuptools.build_meta"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# [build-system]
+# requires = ["setuptools", "wheel"]
+# build-backend = "setuptools.build_meta:__legacy__"
+
+[tool.ruff]
+line-length = 120
+lint.ignore = ["E501"]
+# Disallow relative imports in favor of absolute imports (there is not always an automated fix available).
+# https://docs.astral.sh/ruff/rules/relative-imports/
+# option: lint.flake8-tidy-imports.ban-relative-imports doesn't appear to work during `ruff check`, this is another way to enforce it.
+lint.extend-select = ["TID252"]
+
+[tool.coverage.run]
+concurrency = [
+    "thread",
+    "greenlet",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "only: only run this/these tests",
+]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+testpaths = [
+    "test",
+]
+
+
+# Optional zip safety and package data
+[tool.hatch.metadata]
+allow-unknown = true  # If you have non-PEP621 metadata
+
+[tool.pyright]
+typeCheckingMode = "basic"
