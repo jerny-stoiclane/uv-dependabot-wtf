@@ -338,7 +338,7 @@ py-moneyed==3.0
     # via uv-dependabot-wtf
 pyasn1==0.6.1
     # via pgpy
-pycparser==2.22
+pycparser==2.23
     # via cffi
 pydantic==2.11.3
     # via
