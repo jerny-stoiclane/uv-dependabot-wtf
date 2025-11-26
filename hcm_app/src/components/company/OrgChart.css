@@ -1,0 +1,35 @@
+.orgchart.companyOrgChart {
+  width: 700px;
+}
+
+.orgchart-container {
+  border: none;
+  min-height: 700px;
+}
+
+.orgchart.companyOrgChart > ul > li > ul li::before {
+  border-top-color: #023047;
+}
+
+.orgchart ul li .oc-node .oc-heading {
+  background-color: #023047;
+}
+
+.orgchart.companyOrgChart .oc-node .position {
+  box-sizing: border-box;
+  background-color: #023047;
+  color: #fff;
+  width: 130px;
+  height: 65px;
+  padding: 2px;
+}
+
+.orgchart.companyOrgChart .oc-node .fullname {
+  box-sizing: border-box;
+  color: #023047;
+  background-color: #fff;
+  width: 130px;
+  height: 65px;
+  padding: 2px;
+  border: 1px solid #023047;
+}

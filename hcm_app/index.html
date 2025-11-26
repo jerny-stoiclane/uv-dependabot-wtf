@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Armhr PEO" />
+  <meta name="keywords" content="Armhr PEO" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Armhr PEO">
+  <meta property="og:image" content="">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <link crossorigin="use-credentials" rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link crossorigin="use-credentials" rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link crossorigin="use-credentials" rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link crossorigin="use-credentials" rel="manifest" href="/site.webmanifest">
+  <link crossorigin="use-credentials" rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Armhr">
+  <meta name="application-name" content="Armhr">
+  <meta name="msapplication-TileColor" content="#1976D2">
+  <meta name="theme-color" content="#1976D2">
+  <!-- Armhr -->
+  <title>Armhr</title>
+  <style>
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('/font/ProximaNova-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('/font/ProximaNova-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('/font/ProximaNova-SemiBold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('/font/ProximaNova-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    html {
+      overflow-x: hidden;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    :root {
+      --fc-button-bg-color: #023047;
+      --fc-button-border-color: #023047;
+      --fc-button-hover-bg-color: #0D2131;
+      --fc-button-hover-border-color: #0D2131;
+      --fc-button-active-bg-color: #0D2131;
+      --fc-button-active-border-color: #0D2131;
+      --fc-event-text-color: inherit;
+    }
+
+    .fc .fc-button:focus,
+    .fc .fc-button:active {
+      box-shadow: none !important;
+    }
+
+    .fc .fc-button:disabled {
+      color: rgba(0, 0, 0, 0.26);
+      box-shadow: none;
+      border-color: rgba(0, 0, 0, 0.12);
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .fc .fc-list-event:hover td {
+      background-color: transparent;
+    }
+
+    .tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 10px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+      z-index: 9999 !important;
+    }
+
+    .company-event {
+      background-color: #E3EDFF !important;
+      color: #2563EB !important;
+      border: none !important;
+    }
+
+    .holiday-event {
+      background-color: #FEF3C7 !important;
+      color: #B7791F !important;
+      border: none !important;
+    }
+
+    .pto-event {
+      background-color: #E6F4EA !important;
+      color: #219653 !important;
+      border: none !important;
+    }
+
+    .birthday-event {
+      background-color: #FEF3C7 !important;
+      color: #D97706 !important;
+      border: none !important;
+    }
+
+    .anniversary-event {
+      background-color: #F3E8FF !important;
+      color: #8B5CF6 !important;
+      border: none !important;
+    }
+
+    .other-event,
+    .all-event {
+      background-color: #F3F4F6 !important;
+      color: #64748B !important;
+      border: none !important;
+    }
+
+    .debug {
+      background-color: red
+    }
+
+    .ql-editor {
+      font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 16px !important;
+    }
+
+    .ql-toolbar {
+      font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    }
+
+    .ql-toolbar button,
+    .ql-toolbar span,
+    .ql-picker {
+      font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="root"></div>
+  <div id="portal"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
