@@ -35,7 +35,7 @@ async-timeout==5.0.1 ; python_full_version < '3.12'
     #   asyncpg
 asyncpg==0.29.0
     # via uv-dependabot-wtf
-attrs==25.1.0
+attrs==25.4.0
     # via
     #   aiohttp
     #   aws-encryption-sdk
