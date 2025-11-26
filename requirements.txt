@@ -75,7 +75,7 @@ bumpver==2024.1130
     # via uv-dependabot-wtf
 bytecode==0.16.1
     # via ddtrace
-cattrs==24.1.2
+cattrs==25.3.0
     # via ddtrace
 certifi==2025.1.31
     # via
